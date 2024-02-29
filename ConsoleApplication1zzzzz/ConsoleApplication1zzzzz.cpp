@@ -195,7 +195,6 @@ int main()
     apple_draw();
 
     this_thread::sleep_for(time_delay);
-    //system("cls");
 
     zmeyka.move();
 
