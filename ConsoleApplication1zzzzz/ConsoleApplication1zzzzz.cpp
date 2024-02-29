@@ -182,7 +182,6 @@ int main()
   
   HideCursor();
   
-  
   apple_create(zmeyka.segment_coords);
 
   while (is_running)
@@ -204,6 +203,3 @@ int main()
     SetConsoleCursorPosition(HND,{0,0});
   }
 }
-
-/// get rid of lag
-/// colours
