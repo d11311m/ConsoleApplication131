@@ -1,0 +1,9 @@
+Build
+.vs
+x64
+*.vcxproj.user
+/out
+Debug
+ConsoleApplication131
+Pomt2
+Promt
