@@ -7,6 +7,7 @@
 #include <random>
 #include "Zmeyka.h"
 #include "color_factory.h"
+#include "util.h"
 
 #define RESET   "\033[0m"
 #define BLACK   "\033[30m"
@@ -160,7 +161,7 @@ void check_gameover(vector <COORD> zmeyka_copy)
 
   for (size_t i = 1; i < zmeyka_copy.size(); i++)
   {
-    if (zmeyka_copy[i].X == zmeyka_copy[0].X && zmeyka_copy[i].Y == zmeyka_copy[0].Y)
+    if (are_coords_the_same(zmeyka_copy[i], zmeyka_copy[0]))
     {
       is_running = false;
       SetConsoleCursorPosition(HND, { width / 3 ,height / 2 });

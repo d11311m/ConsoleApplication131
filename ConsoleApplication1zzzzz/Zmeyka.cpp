@@ -1,4 +1,5 @@
 #include "Zmeyka.h"
+#include "util.h"
 
 Zmeyka::Zmeyka()
 {
@@ -54,8 +55,8 @@ bool Zmeyka::is_future_direction_legal()
   COORD head = segment_coords[0];
 
   Coord_movment(head, future_Direction);
-
-  if (head.X == segment_coords[1].X && head.Y == segment_coords[1].Y)
+  
+  if (are_coords_the_same(head, segment_coords[1]))                    
   {
     return false;
   }
